@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Based Repition Counting</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #video {
+            border: 2px solid black;
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ML Based Repition Counting</h1>
+    <img id="video" src="{{ url_for('video_feed') }}" width="640" height="480">
+    <br><br>
+    <button id="resetButton">Reset</button>
+
+    <script>
+        document.getElementById('resetButton').addEventListener('click', function() {
+            fetch('/reset', { method: 'POST' })
+            .then(response => console.log("Counter Reset"))
+            .catch(error => console.error("Error resetting counter:", error));
+        });
+    </script>
+</body>
+</html>
