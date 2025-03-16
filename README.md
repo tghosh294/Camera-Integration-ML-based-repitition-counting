@@ -10,8 +10,8 @@ This project integrates a camera with machine learning to count the number of si
 ## How to Run  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/tghosh294/Camera-Integration-ML---Repitition-Counting.git
-   cd Camera-Integration-ML---Repitition-Counting
+   git clone https://github.com/tghosh294/Camera-Integration-ML-based-repitition-counting.git
+   cd Camera-Integration-ML-based-repitition-counting
 
 2. Install dependencies:  
    ```bash
